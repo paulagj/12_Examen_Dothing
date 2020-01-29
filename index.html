@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dothings</title>
+    <link href="https://fonts.googleapis.com/css?family=Gelasio:400,500|Roboto&display=swap" rel="stylesheet">
+    <style type="text/css">
+        :root{
+            --verd:#DADE63;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        img{
+            width: 100%;
+        }
+        body{
+            font-family: 'Roboto', sans-serif;
+        }
+        /*nav*/
+        nav{
+            display: flex;
+            justify-content: flex-end;
+            padding: 30px 40px;
+            background: white;
+            width: 100%;
+            position: fixed;
+        }
+        nav a{
+            color: var(--verd);
+            text-decoration: none;
+            padding: 10px;
+        }
+        /*header*/
+        header{
+            height: 100vh;
+        }
+        h1{
+            font-weight: 400;
+            font-size: 20em;
+            padding: 200px 30px 0 30px;
+            font-family: 'Gelasio', serif;
+            color: var(--verd);
+        }
+        header p{
+            position: absolute;
+            width: 65vw;
+            padding: 40px; 
+            line-height: 1.4em;
+            color: var(--verd);
+        }
+        /*main*/
+        main{
+            display: grid;
+            grid-template: repeat(1,1fr)/repeat(2,1fr);
+            grid-gap: 10px;
+        }
+        .c1 img, .c2 img, .c3 img{
+            display: flex;
+            width: 100%;
+            height: 100%;
+            
+        }
+        .c1, .c2, .c3{
+            overflow: hidden;
+        }
+        .c1{
+            grid-row: 2 span;
+        }
+        /*footer*/
+        footer{
+            width: 100%;
+            display: flex;
+            padding: 50px 50px;
+            line-height: 1.4em;
+        }
+        .f1, .f2{
+            width: 50%;
+        }
+        .f2{
+            display: flex;
+            flex-direction: column;
+        }
+        .f2, .xxss{
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+        @media (max-width:600px){
+            nav{
+                justify-content: center;
+                font-size: 2.2em;
+                height: 70px;
+            }
+            header{
+                height: 50vh;
+            }
+            header p{
+                position: relative;
+                width: 100%;
+                font-size: 2em;
+                padding: 80px 20px 0 40px;
+            }
+            main{
+                grid-template: repeat(1,1fr)/repeat(1,1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#">Work</a>
+        <a href="#">Inspo</a>
+        <a href="#">About</a>
+    </nav>
+    <header>
+        <p>We are a brand experience design company.  We partner with clients to help them connect with their audiences through outstanding products, experiences, and environments.  We do it through our unique design “with a point of view” approach.  We believe that enriching product experiences with a sense of style always delivers business results.</p>
+        <h1>Dothings</h1>
+    </header>
+    <main>
+        <div class="c1">
+            <img src="img/dothings.jpg" alt="">
+        </div>
+        <div class="c2">
+            <img src="img/vote.jpg" alt="">
+        </div>
+        <div class="c3">
+            <img src="img/TomFord.gif" alt="">
+        </div>
+    </main>
+    <footer>
+        <div class="f1">
+            <p>61 Greenpoint Ave, Suite #306</p>
+            <p>Brooklyn, NY 11222</p>
+            <p>212 228 3328</p>
+            <a href="mailto:hello@dothingsnyc.com"><p>hello@dothingsnyc.com</p></a>
+        </div>
+        <div class="f2">
+           <div class="xxss">
+            <a href="Instagram">Instagram</a>
+            <a href="Linkedin">Linkedin</a>
+            </div>
+            <p>@Dothings 2019</p>
+        </div>
+    </footer>
+</body>
+</html>
